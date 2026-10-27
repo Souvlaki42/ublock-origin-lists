@@ -1,3 +1,10 @@
+! Title: Hide Copilot from Github.com website
+! Description: Hide Copilot from github.com
+! Version: 2.0.0
+! Last modified: 2026-10-27 23:20
+! Homepage: https://github.com/Souvlaki42/ublock-origin-lists
+! License: https://github.com/Souvlaki42/ublock-origin-lists/blob/main/LICENSE
+
 ! Removes "Copilot" command palette item
 github.com##command-palette-item[data-item-title="Copilot"]
 
@@ -32,3 +39,31 @@ github.com##span:has(> button[data-testid="copilot-diff-explain-button"])
 
 ! Removes "Open Copilot panel" in PR review (https://github.com/1fexd/600-sound-volume/pull/11/changes)
 github.com##div:has(> button > svg.octicon-copilot)
+
+! Jan 1, 2025 https://github.com
+github.com##li:has(> ul > li#query-builder-test-result-ask-copilot)
+github.com##li.ActionList-sectionDivider[aria-hidden="true"]
+
+github.com##div:has(> button[data-testid="copilot-ask-menu"])
+
+github.com##div[data-test-id="copilot-actions-chat-button"]
+
+github.com##div.dropdown-divider:has(+span[data-target="copilot-diff-entry.menuItemsSlot"])
+github.com##span[data-target="copilot-diff-entry.menuItemsSlot"]
+
+github.com##react-partial[partial-name="copilot-code-chat"]
+github.com##.copilotPreview__container
+
+! Jan 13, 2025 https://github.com
+github.com##.AppHeader-CopilotChat
+
+github.com##div:has(> a[type="button"][href^="https://copilot-workspace.githubnext.com"])
+
+! Apr 4, 2025 https://github.com
+github.com##li:has(> ul > li#query-builder-test-result-chat-with-copilot)
+! Apr 11, 2025 https://github.com
+github.com##span:has(> p > span[data-assignee-name="Copilot"])
+! Apr 13, 2025 https://github.com
+github.com##div:has(> div > div > a[data-testid="open-in-copilot-agent-button"])
+! Apr 26, 2025 https://github.com
+github.com##command-palette-item[data-item-id="2918418660"]

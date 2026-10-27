@@ -16,7 +16,7 @@ Here they are:
 
 1. [Hide YT Shorts](https://github.com/gijsdev/ublock-hide-yt-shorts)
 2. [Hide YT Playables](https://github.com/Vivian-Green/ublock-hide-yt-playables-too)
-3. [Hide Copilot on github.com](https://github.com/orgs/community/discussions/147437#discussioncomment-11649382)
+3. [Hide Copilot on github.com](https://github.com/orgs/community/discussions/147437)
 
 ## Credits
 This project is licensed with the MIT license. Check the [LICENSE](./LICENSE) for more details.
