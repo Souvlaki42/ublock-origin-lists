@@ -67,3 +67,8 @@ github.com##span:has(> p > span[data-assignee-name="Copilot"])
 github.com##div:has(> div > div > a[data-testid="open-in-copilot-agent-button"])
 ! Apr 26, 2025 https://github.com
 github.com##command-palette-item[data-item-id="2918418660"]
+
+! TODO: Hide Agent sessions again
+! TODO: Hide Copilot in sidebar
+! TODO: Hide MCP registry in sidebar
+! TODO: Hide Copilot settings in user menu
