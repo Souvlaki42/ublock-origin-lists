@@ -1,0 +1,34 @@
+! Removes "Copilot" command palette item
+github.com##command-palette-item[data-item-title="Copilot"]
+
+! Removes "Mention Copilot" from comment textbox on PRs (https://github.com/GrapheneOS/platform_packages_modules_Permission/pull/86)
+github.com##button[id^="copilot-md-menu-anchor"]
+github.com##div:has(> button[id^="copilot-md-menu-anchor"]) + hr
+
+! Removes "Ask about this diff" menu item for each file diff in commit change screen (https://github.com/GrapheneOS/platform_frameworks_base/commit/8209fe0ab30eaf097c380bb373bc6433b29c3556)
+github.com##li[data-component="ActionList.Divider"][aria-hidden="true"]:has(~ li[role="menuitem"]:has(svg.octicon-copilot))
+github.com##li[role="menuitem"]:has(svg.octicon-copilot)
+
+github.com##div:has(> div > button > span > span[data-component="text"]:has-text("Assign to Copilot"))
+
+! Removes "code with agent mode" on own issues (https://github.com/LinkSheet/LinkSheet/issues/693)
+github.com##div:has(> div > div > *[data-testid="open-in-copilot-agent-button"])
+
+! Removes Copilot reviewer from own PRs
+github.com##p:has(> span + span[data-hovercard-url="/copilot/hovercard?bot=copilot-pull-request-reviewer"])
+
+! Removes "Ask Copilot about this file" (https://github.com/Kotlin/kotlinx.serialization/blob/master/docs/serializers.md)
+github.com##button[data-testid="copilot-ask-menu"]
+
+! Removes "Assign to Copilot" on issues (https://github.com/LinkSheet/LinkSheet/issues/695)
+github.com##div:has(> div > button > span > span > svg.octicon-agent)
+
+! Removes "Draft with Copilot" in "Create sub-issue" menu (https://github.com/LinkSheet/LinkSheet/issues/494)
+github.com##li[data-component="ActionList.Divider"][aria-hidden="true"]:has(~ li:has( > div > span > svg.octicon-copilot))
+github.com##li:has( > div > span > svg.octicon-copilot)
+
+! Removes "Ask about this diff" in file diff ribbon on PR (https://github.com/1fexd/600-sound-volume/pull/11/changes)
+github.com##span:has(> button[data-testid="copilot-diff-explain-button"])
+
+! Removes "Open Copilot panel" in PR review (https://github.com/1fexd/600-sound-volume/pull/11/changes)
+github.com##div:has(> button > svg.octicon-copilot)

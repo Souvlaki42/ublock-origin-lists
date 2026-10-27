@@ -1,0 +1,14 @@
+! Title: Hide YouTube Playables Too (intended for use with Hide YouTube Shorts)
+! Description: Hide YouTube Playables on YouTube
+! Version: 1.0.0
+! Last modified: 2025-03-06 17:35
+! Homepage: https://github.com/Vivian-Green/ublock-hide-yt-playables-too
+! License: https://github.com/Vivian-Green/ublock-hide-yt-playables-too/blob/master/LICENSE.md
+
+! use alongside this: https://raw.githubusercontent.com/gijsdev/ublock-hide-yt-shorts/master/list.txt
+
+! remove specifically game cards
+www.youtube.com##mini-game-card-view-model
+
+! remove headers for sections that *aren't videos*
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer.style-scope > .ytd-rich-section-renderer.style-scope
