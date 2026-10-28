@@ -5,6 +5,7 @@
 ! Homepage: https://github.com/Souvlaki42/ublock-origin-lists
 ! License: https://github.com/Souvlaki42/ublock-origin-lists/blob/main/LICENSE
 
+! June 28, 2026 by 1fexd
 ! Removes "Copilot" command palette item
 github.com##command-palette-item[data-item-title="Copilot"]
 
@@ -40,7 +41,7 @@ github.com##span:has(> button[data-testid="copilot-diff-explain-button"])
 ! Removes "Open Copilot panel" in PR review (https://github.com/1fexd/600-sound-volume/pull/11/changes)
 github.com##div:has(> button > svg.octicon-copilot)
 
-! Jan 1, 2025 https://github.com
+! Jan 1, 2025 by RaptaG
 github.com##li:has(> ul > li#query-builder-test-result-ask-copilot)
 github.com##li.ActionList-sectionDivider[aria-hidden="true"]
 
@@ -59,7 +60,7 @@ github.com##.AppHeader-CopilotChat
 
 github.com##div:has(> a[type="button"][href^="https://copilot-workspace.githubnext.com"])
 
-! Apr 4, 2025 https://github.com
+! Apr 4, 2025 by charlienegri
 github.com##li:has(> ul > li#query-builder-test-result-chat-with-copilot)
 ! Apr 11, 2025 https://github.com
 github.com##span:has(> p > span[data-assignee-name="Copilot"])
@@ -72,3 +73,6 @@ github.com##command-palette-item[data-item-id="2918418660"]
 ! TODO: Hide Copilot in sidebar
 ! TODO: Hide MCP registry in sidebar
 ! TODO: Hide Copilot settings in user menu
+
+! Oct 28, 2026 by Kruziikrel13
+github.com##li.prc-UnderlineNav-UnderlineNavItem-syRjR:has-text(/^\s*Agents\s*$/)
